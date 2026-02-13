@@ -1,6 +1,6 @@
 name: windows-build
 on:
-  workflowworkflow_dispatch:
+  workflow_dispatch: 
 
 concurrency:
   # One concurrency group per workflow + ref.
