@@ -39,9 +39,9 @@ jobs:
           export CTOOLS_BUILD=all
           ./acore.sh compiler build
       - name: 二进制文件打包
-        run: Compress-Archive -Path "D:/a/azerothcore-wotlk/azerothcore-wotlk/env/dist/*" -DestinationPath "../out.zip"
+        run: Compress-Archive -Path "D:/a/Playerbots-Module/Playerbots-Module/env/dist/*" -DestinationPath "../out.zip"
       - name: 上传工件
         uses: actions/upload-artifact@v6.0.0
         with:
           name: out-files
-          path: D:/a/azerothcore-wotlk/azerothcore-wotlk/env/dist
+          path: D:/a/Playerbots-Module/Playerbots-Module/env/dist
