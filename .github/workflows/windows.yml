@@ -44,4 +44,4 @@ jobs:
         uses: actions/upload-artifact@v6.0.0
         with:
           name: out-files
-          path: D:/a/Playerbots-Module/Playerbots-Module/env/dist
+          path: D:/a/Playerbots-Module/Playerbots-Module
