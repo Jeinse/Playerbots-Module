@@ -25,6 +25,8 @@ jobs:
       BOOST_ROOT: C:\local\boost_1_82_0
     steps:
       - uses: actions/checkout@v4
+        with:
+            path: 'D:\'
       - name: ccache
         uses: hendrikmuhs/ccache-action@v1.2.13
       - name: Configure OS
@@ -38,8 +40,6 @@ jobs:
         run: |
           export CTOOLS_BUILD=all
           ./acore.sh compiler build
-      - name: 二进制文件打包
-        run: Compress-Archive -Path "D:/a/Playerbots-Module/Playerbots-Module/env/dist/*" -DestinationPath "../out.zip"
       - name: 上传工件
         uses: actions/upload-artifact@v6.0.0
         with:
